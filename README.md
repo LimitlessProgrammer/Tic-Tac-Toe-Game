@@ -3,7 +3,7 @@
 
 # Tic Tac Toe Game
 
-![Tic Tac Toe Screenshot](./screenshot.png)
+![Tic Tac Toe Screenshot](image.png)
 
 ## 🕹️ **Project Overview**
 
