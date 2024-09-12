@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+body {
+  @apply bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center;
+}
+
+.game-container {
+  @apply bg-white rounded-lg shadow-lg p-8 max-w-md w-full;
+}
+
+.input-field {
+  @apply p-2 border border-gray-300 rounded-lg mb-2 w-full;
+}
+
+.label {
+  @apply block text-gray-800 mb-2;
+}
+
+.score-text {
+  @apply text-xl font-semibold text-gray-800;
+}
+
+#tic-tac-toe {
+  @apply grid grid-cols-3 gap-4 mx-auto;
+}
+
+.tic-tac-toe-cell {
+  @apply w-20 h-20 text-4xl font-bold bg-gray-200 rounded-lg;
+}
+
+.dark-mode {
+  @apply bg-gray-800 text-gray-100;
+}

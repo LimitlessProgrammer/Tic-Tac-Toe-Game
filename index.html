@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="public/styles.css" rel="stylesheet">
+  <title>Tic Tac Toe</title>
+</head>
+<body class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 min-h-screen flex items-center justify-center">
+
+  <div class="text-center p-8 bg-white rounded-lg shadow-lg max-w-md w-full dark:bg-gray-800 dark:text-gray-100">
+    <h1 class="text-6xl font-extrabold mb-6 text-gray-800 dark:text-gray-100">Tic Tac Toe</h1>
+    
+    <!-- Player Names -->
+    <div class="mb-6">
+      <input id="player-x-name" type="text" placeholder="Player X" class="p-2 border border-gray-300 rounded-lg mb-2 w-full dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" aria-label="Player X Name">
+      <input id="player-o-name" type="text" placeholder="Player O" class="p-2 border border-gray-300 rounded-lg w-full dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100" aria-label="Player O Name">
+    </div>
+    
+    <!-- Scoreboard -->
+    <div id="scoreboard" class="mb-6">
+      <p id="score-x" class="text-xl font-semibold text-gray-800 dark:text-gray-100">Player X: 0</p>
+      <p id="score-o" class="text-xl font-semibold text-gray-800 dark:text-gray-100">Player O: 0</p>
+    </div>
+    
+    <!-- Tic Tac Toe Board -->
+    <div id="tic-tac-toe" class="grid grid-cols-3 gap-4 mx-auto"></div>
+    
+    <!-- Buttons -->
+    <div class="mt-6 flex justify-center gap-4">
+      <button id="reset" class="px-6 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300 ease-in-out">Reset Game</button>
+      <button id="theme-toggle" class="px-6 py-3 bg-gray-800 text-white font-semibold rounded-lg hover:bg-gray-700 transition duration-300 ease-in-out">Switch to Dark Theme</button>
+      <button id="undo" class="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out">Undo</button>
+      <button id="redo" class="px-6 py-3 bg-yellow-500 text-white font-semibold rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out">Redo</button>
+    </div>
+    
+    <!-- Turn Indicator -->
+    <p id="turn-indicator" class="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-100">Player X's turn</p>
+    
+    <!-- Game History -->
+    <div id="history" class="mt-6 text-gray-800 dark:text-gray-100">
+      <h2 class="text-xl font-semibold mb-2">Game History</h2>
+      <ul id="history-list" class="list-disc pl-5"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
